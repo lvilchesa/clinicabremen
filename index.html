@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Veterinaria Bremen | Los Ángeles</title>
+  <meta name="description" content="Clínica Veterinaria Bremen, Los Ángeles, Región del Biobío. Estamos renovando nuestro sitio web; seguimos atendiendo con normalidad. Emergencias 24 horas.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-oscuro: #1B742D;
+      --verde-claro:  #75BA73;
+      --rojo:         #A22615;
+      --texto:        #2b3a2e;
+      --texto-suave:  #5d6b60;
+      --fondo:        #eef5ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Nunito', Arial, sans-serif;
+      color: var(--texto);
+      background: var(--fondo);
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .tarjeta {
+      width: 100%;
+      max-width: 640px;
+      background: #fff;
+      border-radius: 16px;
+      border-top: 6px solid var(--verde-oscuro);
+      box-shadow: 0 10px 30px rgba(27, 116, 45, 0.12);
+      padding: 40px 32px 32px;
+      text-align: center;
+    }
+    .logo { width: 135px; height: auto; }
+    h1 {
+      margin: 16px 0 4px;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--verde-oscuro);
+    }
+    .ciudad { margin: 0; color: var(--texto-suave); font-weight: 600; }
+    .aviso {
+      margin: 24px 0 28px;
+      padding: 16px 20px;
+      background: var(--fondo);
+      border-radius: 12px;
+      line-height: 1.55;
+    }
+    .aviso strong { color: var(--verde-oscuro); font-size: 1.1rem; }
+    .datos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: left;
+    }
+    .dato h2 {
+      margin: 0 0 6px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--texto-suave);
+    }
+    .dato p { margin: 0; line-height: 1.6; }
+    .dato a { color: var(--verde-oscuro); font-weight: 700; text-decoration: none; }
+    .dato a:hover { text-decoration: underline; }
+    .emergencia {
+      grid-column: 1 / -1;
+      background: var(--rojo);
+      color: #fff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .emergencia h2 { color: #fff; opacity: 0.9; margin: 0 0 2px; }
+    .emergencia a.numero { color: #fff; font-size: 1.35rem; }
+    .emergencia a.llamar {
+      background: #fff;
+      color: var(--rojo);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.8rem;
+      color: var(--texto-suave);
+    }
+    @media (max-width: 560px) {
+      .tarjeta { padding: 32px 20px 24px; }
+      .datos { grid-template-columns: 1fr; }
+      .emergencia { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tarjeta">
+      <img class="logo" src="assets/logo-bremen.png" alt="Clínica Veterinaria Bremen">
+      <h1>Clínica Veterinaria Bremen</h1>
+      <p class="ciudad">Los Ángeles · Región del Biobío</p>
+
+      <div class="aviso">
+        <strong>Estamos renovando nuestro sitio web</strong><br>
+        Muy pronto tendremos una página nueva. Mientras tanto, seguimos atendiendo con normalidad.
+      </div>
+
+      <div class="datos">
+        <div class="dato emergencia">
+          <div>
+            <h2>Emergencias 24 horas</h2>
+            <a class="numero" href="tel:+56994197143">+56 9 9419 7143</a>
+          </div>
+          <a class="llamar" href="tel:+56994197143">Llamar ahora</a>
+        </div>
+
+        <div class="dato">
+          <h2>Teléfonos</h2>
+          <p><a href="tel:+56432318373">43 231 8373</a><br>
+             <a href="tel:+56432630736">43 263 0736</a></p>
+        </div>
+
+        <div class="dato">
+          <h2>Horario</h2>
+          <p>Lunes a viernes<br>09:15–13:00 y 15:15–20:00<br>Sábado 09:30–12:00</p>
+        </div>
+
+        <div class="dato">
+          <h2>Dirección</h2>
+          <p>San Martín #557<br>Los Ángeles, Región del Biobío</p>
+        </div>
+
+        <div class="dato">
+          <h2>Cómo llegar</h2>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Mart%C3%ADn+557%2C+Los+%C3%81ngeles%2C+Chile" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year">2026</span> Clínica Veterinaria Bremen · Desarrollo y Soporte Vyasa SpA - Hosting SomosWeb
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
