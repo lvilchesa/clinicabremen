@@ -13,7 +13,6 @@
     :root {
       --verde-oscuro: #1B742D;
       --verde-claro:  #75BA73;
-      --rojo:         #A22615;
       --texto:        #2b3a2e;
       --texto-suave:  #5d6b60;
       --fondo:        #eef5ec;
@@ -77,9 +76,9 @@
     .dato p { margin: 0; line-height: 1.6; }
     .dato a { color: var(--verde-oscuro); font-weight: 700; text-decoration: none; }
     .dato a:hover { text-decoration: underline; }
-    .emergencia {
+    .destacado {
       grid-column: 1 / -1;
-      background: var(--rojo);
+      background: var(--verde-oscuro);
       color: #fff;
       border-radius: 12px;
       padding: 16px 20px;
@@ -89,11 +88,11 @@
       gap: 12px;
       flex-wrap: wrap;
     }
-    .emergencia h2 { color: #fff; opacity: 0.9; margin: 0 0 2px; }
-    .emergencia a.numero { color: #fff; font-size: 1.35rem; }
-    .emergencia a.llamar {
+    .destacado h2 { color: #fff; opacity: 0.9; margin: 0 0 2px; }
+    .destacado a.numero { color: #fff; font-size: 1.35rem; }
+    .destacado a.llamar {
       background: #fff;
-      color: var(--rojo);
+      color: var(--verde-oscuro);
       padding: 10px 18px;
       border-radius: 999px;
       font-weight: 800;
@@ -109,7 +108,7 @@
     @media (max-width: 560px) {
       .tarjeta { padding: 32px 20px 24px; }
       .datos { grid-template-columns: 1fr; }
-      .emergencia { justify-content: center; text-align: center; }
+      .destacado { justify-content: center; text-align: center; }
     }
   </style>
 </head>
@@ -126,23 +125,17 @@
       </div>
 
       <div class="datos">
-        <div class="dato emergencia">
+        <div class="dato destacado">
           <div>
-            <h2>Fono emergencia</h2>
-            <a class="numero" href="tel:+56994197143">+56 9 9419 7143</a>
+            <h2>Fono de atención</h2>
+            <a class="numero" href="tel:+56982485315">+56 9 8248 5315</a>
           </div>
-          <a class="llamar" href="tel:+56994197143">Llamar ahora</a>
-        </div>
-
-        <div class="dato">
-          <h2>Teléfonos</h2>
-          <p><a href="tel:+56432318373">43 231 8373</a><br>
-             <a href="tel:+56432630736">43 263 0736</a></p>
+          <a class="llamar" href="tel:+56982485315">Llamar ahora</a>
         </div>
 
         <div class="dato">
           <h2>Horario</h2>
-          <p>Lunes a viernes<br>09:15–13:00 y 15:15–20:00<br>Sábado 09:30–12:00</p>
+          <p>Lunes a viernes<br>08:45–12:45 y 14:30–19:00<br>Sábado 09:30–12:00</p>
         </div>
 
         <div class="dato">
